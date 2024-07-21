@@ -1,0 +1,540 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #200153;
+    color: #000000;
+
+    font-family: "ALS Sector Regular Regular";
+    font-size: 20px;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "ALS Sector Regular Regular";
+    font-size: 20px;
+    font-weight: 700;
+
+    background-color: #BBFF2C;
+    border: solid black 2px;
+    border-radius: 100px;
+    padding: 23px 26px;
+}
+
+/* ------------------- NAVBAR ------------------- */
+
+nav {
+    /* border: solid white 2px; */
+    position: fixed;
+    width: 100%;
+    top: 0;left: 0;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+
+    z-index: 999;
+}
+
+nav ul {
+    /* border: solid red 3px; */
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    list-style: none;
+
+    font-family: ALS Sector;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+nav ul li {
+    font-family: "ALS Sector Regular Regular";
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+
+    display: block;
+    padding: 10px;
+
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 12px;
+    text-decoration: none;
+    margin-right: 30px;
+
+    float: left;
+}
+
+nav a {
+    font-family: "ALS Sector Regular Regular";
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+
+    display: block;
+    padding: 10px;
+}
+
+nav li:first-child {
+    background-color: transparent;
+    border: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-self: center;
+    margin-left: 50px;
+    padding: 0;
+}
+
+nav li:last-child {
+    background-color: transparent;
+    border: none;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    align-self: center;
+    margin-top: 10px;
+}
+
+li:hover {
+    background-color: #792AFF;
+}
+
+li:hover a {
+    color: white;
+}
+
+nav h1 {
+    font-family: Inter;
+    color: #BBFF2C;
+    font-size: 64px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #200153;
+}
+
+
+/* ===================== SECTIONS ====================== */
+
+section {
+    min-height: 100lvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+}
+
+section h1 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 80px;
+    color: white;
+    text-shadow: 3px 3px #000000;
+}
+
+/* ----------- HERO ---------------------- */
+
+.hero {
+    background: no-repeat url(images/hero-background.png) center/cover #200153;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    color: #2B2D35;
+    border: solid 1px #000000;
+    border-radius: 10px;
+    box-shadow: 1px 3px #000000;
+
+    margin: 0 20px;
+}
+
+.top-panel {
+    border-bottom: solid 2px #000000;
+    background-color:  #D2D0F7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top-panel img {
+    width: 83px;
+    margin: 15px auto 15px 20px;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+    background-color: #ffffff;
+
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.main-title h1 {
+    color: #2B2D35;
+    text-shadow: none;
+}
+
+.rocket-helper {
+    width: 90px;
+
+    position: relative;
+    top: 0;
+    right: 15%;
+
+    z-index: 0;
+}
+
+.hero button {
+    margin-top: 20px;
+}
+
+/* ------------- ABOUT ----------------- */
+
+.about {
+    background: no-repeat url(images/about-background.png) center/cover #0090FF;
+}
+
+.about-desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 60px;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    background-color: #792AFF;
+    height: 298px;
+    border-bottom-left-radius: 10px;
+    padding: 40px 20px 35px 40px;
+
+    color: white;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #D2D0F7;
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.profile-img {
+    width: 336px;
+    height: 186px;
+}
+
+.dots {
+    width: 63px;
+}
+
+
+/* ------------- SKILLS ----------------- */
+
+.skills {
+    background: no-repeat url(images/skills-background.png) center/cover #792AFF;
+}
+
+.skills .main-title {
+    align-items: center;
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+
+    margin: 40px 0;
+}
+
+.skill-list img {
+    width: 25%;
+}
+
+
+
+/* ------------- WORKS ----------------- */
+
+.works {
+    background: no-repeat url(images/works-background.png) center/cover #200153;
+}
+
+.work-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+
+    margin-top: 70px;
+}
+
+.work-list img {
+    width: 30%;
+}
+
+
+/* ------------- REVIEWS ----------------- */
+
+.reviews {
+    background: no-repeat url(images/reviews-background.png) center/cover #792AFF;
+}
+
+.review-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 80%;
+
+    margin-top: 60px;
+}
+
+.review-list .profile {
+    padding: 10px 20px 20px 20px;
+    margin-right: 5px;
+
+    box-shadow: 3px 6px #000000;
+}
+
+.reviewer-img {
+    width: 154px;
+}
+
+.speech-bubble {
+    width: 313px;
+    height: 160px;
+    background: no-repeat url(images/bubble.png) center/cover;
+    padding: 20px 15px 10px 30px;
+    margin-right: 20px;
+
+    font-weight: 400;
+}
+
+.prof-dots {
+    width: 61px;
+}
+
+.name {
+    color: #2B2D35;
+}
+
+.role {
+    font-weight: 400;
+    opacity: 50%;
+}
+
+/* -------------- FOOTER ------------------- */
+
+footer {
+    height: 110px;
+    padding: 0 60px;
+    background-color: #200153;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+/* --------------- Media ------------------- */
+
+
+@media(max-width: 1060px) {
+
+    .hideOnMobile {
+        display: none;
+    }
+
+    nav li:last-child {
+        margin: 0px 30px 0 0;
+        padding: 0;
+    }
+
+    nav h1 {
+        font-size: 40px;
+        margin-top: 0px;
+    }
+
+    .hero, .about, .skills, .works, .reviews {
+        background-position: left;
+    }
+
+    footer {
+        height: 267px;
+        flex-direction: column;
+        padding: 40px 0 80px 0;
+
+        font-weight: 400;
+    }
+
+    section h1 {
+        font-size: 30px;
+    }
+
+    section p {
+        font-size: 14px;
+    }
+
+    .top-panel img {
+        width: 39px;
+        margin: 10px auto 5px 10px;
+    }
+
+    .main-title {
+        padding: 20px;
+    }
+
+    .rocket-helper {
+        right: 0%;
+    }
+
+    .about-desc {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-info {
+        height: auto;
+        padding: 27px 12px;
+        text-align: start;
+        align-items: center;
+        border-bottom-right-radius: 10px;
+        box-shadow: 2px 4px #000000;
+        margin-top: 34px;
+        font-size: 14px;
+    }
+
+    .about-info button {
+        font-size: 14px;
+        margin-top: 20px;
+        padding: 18px 26px;
+    }
+
+    .profile {
+        padding: 15px 15px 5px;
+    }
+
+    .profile-img {
+        width: 280px;
+        height: auto;
+    }
+
+    .footer-info {
+        align-items: center;
+    }
+
+    .skills .title {
+        margin-top: 100px;
+    }
+
+    .work-list {
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+
+    .works {
+        min-height: 120vh;
+    }
+
+    .work-list img {
+        margin-bottom: 15px;
+        width: 80%;
+    }
+
+    .reviews {
+        min-height: 140vh;
+    }
+
+    .review-list {
+        flex-direction: column;
+    }
+
+    .review-list .profile {
+        padding: 0 10px 10px;
+    }
+
+    .reviewer-img {
+        width: 190px;
+    }
+
+    .prof-dots {
+        width: 39px;
+    }
+
+    .speech-bubble {
+        background: transparent;
+        background-color: white;
+        border: solid 2px black;
+        border-radius: 10px;
+        box-shadow: 2px 5px #BBFF2C;
+        font-size: 14px;
+        width: 230px;
+        height: auto;
+        padding: 10px;
+
+        margin: 20px 0 20px;
+    }
+
+    
+    
+}
+
+
+@media(min-width: 1060px) {
+    .hideOnDesktop {
+        display: none;
+    }
+}
